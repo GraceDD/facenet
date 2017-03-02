@@ -56,10 +56,10 @@ class TrainTest(unittest.TestCase):
 
     def tearDown(self):
         # Free memory allocated by the graph
-        print('Closing default session')
-        tf.get_default_session().close()
         print('Resetting default graph')
         tf.reset_default_graph()
+        print('Closing default session')
+        tf.get_default_session().close()
 
     @unittest.skip("Skip this test case for now")
     def test_training_nn4(self):
