@@ -95,7 +95,7 @@ class TrainTest(unittest.TestCase):
     # test_freeze_graph
     
     def test_training_classifier_inception_resnet_v1(self):
-      print('test_training_classifier_inception_resnet_v1')
+        print('test_training_classifier_inception_resnet_v1')
         argv = ['--logs_base_dir', self.tmp_dir,
                 '--models_base_dir', self.tmp_dir,
                 '--data_dir', self.dataset_dir,
@@ -113,7 +113,7 @@ class TrainTest(unittest.TestCase):
         facenet_train_classifier.main(args)
 
     def test_training_classifier_inception_resnet_v1x(self):
-      print('test_training_classifier_inception_resnet_v1x')
+        print('test_training_classifier_inception_resnet_v1x')
         argv = ['--logs_base_dir', self.tmp_dir,
                 '--models_base_dir', self.tmp_dir,
                 '--data_dir', self.dataset_dir,
@@ -132,7 +132,7 @@ class TrainTest(unittest.TestCase):
 
     #@unittest.skip("Skip this test case for now")
     def test_training_classifier_inception_resnet_v2(self):
-      print('test_training_classifier_inception_resnet_v2')
+        print('test_training_classifier_inception_resnet_v2')
         argv = ['--logs_base_dir', self.tmp_dir,
                 '--models_base_dir', self.tmp_dir,
                 '--data_dir', self.dataset_dir,
@@ -150,7 +150,7 @@ class TrainTest(unittest.TestCase):
         facenet_train_classifier.main(args)
 
     def test_train_tripletloss_inception_resnet_v1(self):
-      print('test_train_tripletloss_inception_resnet_v1')
+        print('test_train_tripletloss_inception_resnet_v1')
         argv = ['--logs_base_dir', self.tmp_dir,
                 '--models_base_dir', self.tmp_dir,
                 '--data_dir', self.dataset_dir,
@@ -168,7 +168,7 @@ class TrainTest(unittest.TestCase):
         facenet_train.main(args)
 
     def test_finetune_tripletloss_inception_resnet_v1(self):
-      print('test_finetune_tripletloss_inception_resnet_v1')
+        print('test_finetune_tripletloss_inception_resnet_v1')
         argv = ['--logs_base_dir', self.tmp_dir,
                 '--models_base_dir', self.tmp_dir,
                 '--data_dir', self.dataset_dir,
@@ -187,7 +187,7 @@ class TrainTest(unittest.TestCase):
         facenet_train.main(args)
 
     def test_compare(self):
-      print('test_compare')
+        print('test_compare')
         argv = [os.path.join('data/', self.pretrained_model_name),
                 'data/images/Anthony_Hopkins_0001.jpg',
                 'data/images/Anthony_Hopkins_0002.jpg' ]
