@@ -56,6 +56,8 @@ class TrainTest(unittest.TestCase):
 
     def tearDown(self):
         # Free memory allocated by the graph
+        print('Closing default session')
+        tf.get_default_session().close()
         print('Resetting default graph')
         tf.reset_default_graph()
 
@@ -89,8 +91,6 @@ class TrainTest(unittest.TestCase):
         
     # test_align_dataset_mtcnn
     # http://vis-www.cs.umass.edu/lfw/lfw-a.zip
-    
-    # test_triplet_loss_training
     
     # test_freeze_graph
     
